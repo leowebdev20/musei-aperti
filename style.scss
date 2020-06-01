@@ -1,0 +1,433 @@
+// GLOBALS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+$background: #464553;   //oppure 41404E
+$primary: #36A381;
+$text: #F4F4F4;
+$hover: #c5c5c5;
+$outline: #E5E5E5;
+$placeholder: rgba(229, 229, 229, 0.77);
+$alternative: #88869B;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    min-height: 100vh;
+
+}
+//GENERAL STYLE
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $background;
+    color: $text;
+}
+
+nav, footer {
+    background-color: $primary;
+}
+a {
+    color: $text;
+    text-decoration: none;
+}
+textarea:focus, input:focus {  //non va?
+    outline: none;
+}
+a:hover, a:active, a:focus{  //style standard x gli anchor
+    text-decoration: none;
+    color: $hover;
+}
+//ACTUAL STYLE
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 16px 0 16px 0;
+    position: relative;
+        img {
+            width: 62px;
+        }
+        .logomuseiaperti {
+            margin: 0 22px 0 40px;
+        }
+        .search-icon {
+            margin: 0 10px 0 4px;
+        }
+}
+.logo h1 {
+    font-size: 2em;
+    margin: 0 20px 0 0;
+    font-weight: 600;
+        &:hover {
+            color: $hover;
+        }
+}
+nav input {   // da cancellare??
+    border: solid 200px $outline;
+    background: none;
+    border-radius: 25px;
+    padding: 14px;
+    width: 260px;
+    color: $text;
+    font-size: 1.20em;
+    margin: 0 20px 0 0;
+}
+nav input::placeholder {
+    color: $placeholder;
+}
+li {
+    list-style: none;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+.links li{
+    margin: 14px 50px 14px 50px;
+    font-size: 1.6em;
+    font-weight: 600;
+    a:hover {
+        color: $hover;
+    }
+}
+.containers {
+    border: solid 2px $outline;
+    border-radius: 13px;
+
+    h2 {
+        padding: 15px 0 15px 22px;
+        font-size: 2em;
+    }
+}
+.containerZ {
+    min-height: 100%;
+    margin-top: 40px;
+    margin-left: 15px;
+    display: grid;
+    /* one way to do it?:
+    grid-template-columns: 27% 70%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+     */
+    grid-template-columns: 1.2fr 3fr;
+    // grid-template-rows: repeat(10, 1fr);    questo è metodo forse vecchio? Cmq 1 alternativa: fai semplicemente grid-auto-rows: 10% e gioca poi con la ripartizione delle rows sotto?Ma rimane il problema che + contenuto metti + le grid rows si allungano e quindi gli altri container diventan mezzi vuoti.  Infine il metodo piu corretto sembra: grid-auto-rows: minmax(10%, min-content) però non riesco a far stare le regioni x es tutte intere e cmq devo poi mettere un po di padding bottom alle tabelle
+   // grid-auto-rows: minmax(10%, min-content);    ! !  ! ! ! !!  ! !  ! ! ! !!  ! !  ! ! ! !! 
+   // grid-auto-rows: minmax(1fr, min-content);
+   // grid-auto-rows: minmax(1fr, min-content);
+   gap: 30px 30px;
+}
+.dati-container {
+   grid-column: 1 / 2;
+   grid-row: 1 / span 3;
+}
+.regioni-container {
+   grid-column: 1 / 2;
+   grid-row: 4 / span 7;
+}
+.recenti-container {
+   grid-column: 2 / 3;
+   grid-row: 1 / span 4;
+}
+.programmate-container {
+   grid-column: 2 / 3;
+   grid-row: 5 / span 4;
+}
+
+/*questa era per lo styling senza table dei dati! da cancellar*/
+.containers ul {
+   //   margin-left: 22px;
+   //   margin-right: 22px;
+   font-size: 1.4em;
+   border-radius: 20px;
+li:nth-child(even) {background: $background}
+li:nth-child(odd) {background: $alternative}
+li p {
+    margin-left: 22px;
+   }
+}
+
+.tables {
+    margin: 10px 22px;
+    table-layout: fixed;
+    width: 90%;
+}
+th,td {
+    border-style: solid;
+    word-wrap: break-word;
+}
+th {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+td {
+    font-size: 1.2em;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+/* style pagina search*/
+.container-search {
+ min-height: 100%;
+ margin-top: 40px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 60%;
+}
+.result-container {
+  width: 90%;
+  margin-left: 60px;
+    img {
+        width: 100%;
+    }
+}
+//fine pag search
+.lista {
+position:absolute;
+z-index: 99;
+/*position the autocomplete items to be the same width as the container:*/
+top: 100%;
+left: 0;
+ right: 0;
+}
+.form-control {
+  width: 500px;
+  border: solid 2px rgb(219, 219, 219);
+  background: $text;
+  border-radius: 25px;
+  height: 52px;
+  color: $background;
+  font-size: 1.50em;
+}
+
+.form-control::placeholder {
+    color: $alternative;
+}
+  
+.nav-container form {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.nav-container button {
+ background: none;
+ border: none;
+}
+  
+/*
+.moveRight {          puoi usare questo metodo o quello sotto!! in ogni caso float right non funzia dentro un flex container!
+ position: absolute;    inoltre float sembra un po superato, perché non flessibile in caso di responsive, sempre meglio usare appunto flexbox or grid
+ right: 70px;
+} */
+form {
+ margin-left: auto;
+ margin-right: 70px;
+}
+body {
+ margin: 0;
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+
+/*
+main {                       non so cosa sia sta voce
+ display: block;
+ flex: 1 0 auto;
+} */
+  
+/*
+footer {                     questo sembra andare dai, per il footer non fixed (ma cmq molto provvisorio)
+ margin-top:calc(5% + 300px);
+} */
+footer {
+  z-index: 10;
+  position: fixed;      
+  bottom: 0;
+  width: 100%;
+  ul {
+      margin-bottom: 0px;
+}
+}
+/*se lasci invece il footer fixed questa del contenuto scrollable può essere 1 soluzione => */
+.containerZCONSCROLL {  //credo si possa togliere
+    position: absolute;
+    top: 100px;
+    width: 80%;
+    height: 800px; /* assumed height, use an appropriate value */
+    overflow: scroll;
+    margin-left: 10%;
+}
+.containerZ {
+    // ho tolto absolute   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    position: relative;    
+    top: 100px;
+    width: 80%;
+    // height: 800px; /* assumed height, use an appropriate value */
+    // overflow: scroll;
+    margin-left: 10%;
+    margin-bottom: 300px;
+        .tables {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            overflow: scroll; //????? voglio far scrollare solo quando c'è tanta roba
+        }
+    
+}
+#dati-table, #recenti-table, #programmate-table, #regioni-table {
+    margin-bottom: 50px;
+}
+ .container-search {
+    position: absolute;
+    top: 100px;
+    width: 80%;
+    /* questi due sono per scrollare il contenuto con una secondaria scrollbar come soluzione per il fixed footer (che va over content)
+    height: 800px;      (assumed height, use an appropriate value)
+    overflow: scroll;
+    */
+    margin-left: 10%;
+    /* questo è styling sempre relativo al fixed footer così non va sul content ma senza l'ulteriore scrollbar data dai due parametri commentati sopra*/
+    margin-bottom: 200px;
+        #venezia-table {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+ }
+ .tables {
+     margin-left: auto;
+     margin-right: auto;
+     border: none;
+ }
+ table, thead, th, tr, td {
+    border: none;
+}
+thead {
+    tr {
+        background: $alternative;
+    }
+}
+tbody {
+    tr:nth-child(even) {background: $alternative}
+    tr:nth-child(odd) {background: $background}
+}
+
+// .regioni-container {
+//     margin-bottom: 200px;
+// }
+
+/* bar styling width */
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 30px;
+    background: $placeholder;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 30px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(92, 92, 92);
+  }
+  // PER BAR FIREFOX
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: #888 $placeholder;
+    scrollbar-width: thin;
+}
+.containers {
+    
+    scrollbar-color: #888 $placeholder;
+    scrollbar-width: thin;
+}
+// FINE BAR FIREFOX
+//qui ho cercato di nascondere gli angoli della bar ma riesce però nascondendo a metà il regione-container
+// .regioni-container {
+//     height: 100%;
+//     overflow-y: auto;
+//     border-radius: 20px;
+// }
+// .reg {
+//     overflow: hidden;
+//     border-radius: 80px;
+// } 
+  
+main, .containerZ, .container-contatti {
+    min-height: 100%;
+    height: 100%;
+}
+// STYLE PAGINA INFO
+.sidepage-main {
+    padding-bottom: 200px;
+}
+.container-info, .container-contatti {
+    min-height: 100%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+        h2 {
+            font-size: 2.6em;
+            padding-bottom: 14px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 1.6em;
+            padding-bottom: 40px;
+        }
+        li {
+            font-weight: 300;
+            font-size: 1.6em;
+        }
+}
+.social-div {
+    margin-top: 200px;
+        img {
+            width: 60px;
+        }
+        ul {
+            display: flex;
+                li {
+                    margin-top: 10px;
+                    padding-right: 30px;
+                        a:hover {
+                            img {
+                                transform: scale(0.85);
+                            }
+                        }
+                }
+        }
+}
+.social-div a img {
+    transition: transform 200ms ease-out;
+}
+//Inizio style pagine di phptest
+//pagina info
+.container-info {
+    ul {
+        margin-top: 26px;
+        margin-bottom: 60px;
+        li {
+            margin-bottom: 16px;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+// mette il campo dei suggerimenti wide tanto quanto la search bar
+#result {
+    width: 500px;
+    margin-left: auto;
+    margin-right: 160px;
+}

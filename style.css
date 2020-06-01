@@ -1,0 +1,528 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #464553;
+  color: #F4F4F4;
+}
+
+nav, footer {
+  background-color: #36A381;
+}
+
+a {
+  color: #F4F4F4;
+  text-decoration: none;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #c5c5c5;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0 16px 0;
+  position: relative;
+}
+
+.nav-container img {
+  width: 62px;
+}
+
+.nav-container .logomuseiaperti {
+  margin: 0 22px 0 40px;
+}
+
+.nav-container .search-icon {
+  margin: 0 10px 0 4px;
+}
+
+.logo h1 {
+  font-size: 2em;
+  margin: 0 20px 0 0;
+  font-weight: 600;
+}
+
+.logo h1:hover {
+  color: #c5c5c5;
+}
+
+nav input {
+  border: solid 200px #E5E5E5;
+  background: none;
+  border-radius: 25px;
+  padding: 14px;
+  width: 260px;
+  color: #F4F4F4;
+  font-size: 1.20em;
+  margin: 0 20px 0 0;
+}
+
+nav input::-webkit-input-placeholder {
+  color: rgba(229, 229, 229, 0.77);
+}
+
+nav input:-ms-input-placeholder {
+  color: rgba(229, 229, 229, 0.77);
+}
+
+nav input::-ms-input-placeholder {
+  color: rgba(229, 229, 229, 0.77);
+}
+
+nav input::placeholder {
+  color: rgba(229, 229, 229, 0.77);
+}
+
+li {
+  list-style: none;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 60px;
+}
+
+.links li {
+  margin: 14px 50px 14px 50px;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.links li a:hover {
+  color: #c5c5c5;
+}
+
+.containers {
+  border: solid 2px #E5E5E5;
+  border-radius: 13px;
+}
+
+.containers h2 {
+  padding: 15px 0 15px 22px;
+  font-size: 2em;
+}
+
+.containerZ {
+  min-height: 100%;
+  margin-top: 40px;
+  margin-left: 15px;
+  display: -ms-grid;
+  display: grid;
+  /* one way to do it?:
+    grid-template-columns: 27% 70%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+     */
+  -ms-grid-columns: 1.2fr 3fr;
+      grid-template-columns: 1.2fr 3fr;
+  gap: 30px 30px;
+}
+
+.dati-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
+}
+
+.regioni-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 7;
+  grid-row: 4 / span 7;
+}
+
+.recenti-container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1 / span 4;
+}
+
+.programmate-container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 4;
+  grid-row: 5 / span 4;
+}
+
+/*questa era per lo styling senza table dei dati! da cancellar*/
+.containers ul {
+  font-size: 1.4em;
+  border-radius: 20px;
+}
+
+.containers ul li:nth-child(even) {
+  background: #464553;
+}
+
+.containers ul li:nth-child(odd) {
+  background: #88869B;
+}
+
+.containers ul li p {
+  margin-left: 22px;
+}
+
+.tables {
+  margin: 10px 22px;
+  table-layout: fixed;
+  width: 90%;
+}
+
+th, td {
+  border-style: solid;
+  word-wrap: break-word;
+}
+
+th {
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+td {
+  font-size: 1.2em;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* style pagina search*/
+.container-search {
+  min-height: 100%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.result-container {
+  width: 90%;
+  margin-left: 60px;
+}
+
+.result-container img {
+  width: 100%;
+}
+
+.lista {
+  position: absolute;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.form-control {
+  width: 500px;
+  border: solid 2px #dbdbdb;
+  background: #F4F4F4;
+  border-radius: 25px;
+  height: 52px;
+  color: #464553;
+  font-size: 1.50em;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #88869B;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #88869B;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #88869B;
+}
+
+.form-control::placeholder {
+  color: #88869B;
+}
+
+.nav-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-container button {
+  background: none;
+  border: none;
+}
+
+/*
+.moveRight {          puoi usare questo metodo o quello sotto!! in ogni caso float right non funzia dentro un flex container!
+ position: absolute;    inoltre float sembra un po superato, perché non flessibile in caso di responsive, sempre meglio usare appunto flexbox or grid
+ right: 70px;
+} */
+form {
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*
+main {                       non so cosa sia sta voce
+ display: block;
+ flex: 1 0 auto;
+} */
+/*
+footer {                     questo sembra andare dai, per il footer non fixed (ma cmq molto provvisorio)
+ margin-top:calc(5% + 300px);
+} */
+footer {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  margin-bottom: 0px;
+}
+
+/*se lasci invece il footer fixed questa del contenuto scrollable può essere 1 soluzione => */
+.containerZCONSCROLL {
+  position: absolute;
+  top: 100px;
+  width: 80%;
+  height: 800px;
+  /* assumed height, use an appropriate value */
+  overflow: scroll;
+  margin-left: 10%;
+}
+
+.containerZ {
+  position: relative;
+  top: 100px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 300px;
+}
+
+.containerZ .tables {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  overflow: scroll;
+}
+
+#dati-table, #recenti-table, #programmate-table, #regioni-table {
+  margin-bottom: 50px;
+}
+
+.container-search {
+  position: absolute;
+  top: 100px;
+  width: 80%;
+  /* questi due sono per scrollare il contenuto con una secondaria scrollbar come soluzione per il fixed footer (che va over content)
+    height: 800px;      (assumed height, use an appropriate value)
+    overflow: scroll;
+    */
+  margin-left: 10%;
+  /* questo è styling sempre relativo al fixed footer così non va sul content ma senza l'ulteriore scrollbar data dai due parametri commentati sopra*/
+  margin-bottom: 200px;
+}
+
+.container-search #venezia-table {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.tables {
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+table, thead, th, tr, td {
+  border: none;
+}
+
+thead tr {
+  background: #88869B;
+}
+
+tbody tr:nth-child(even) {
+  background: #88869B;
+}
+
+tbody tr:nth-child(odd) {
+  background: #464553;
+}
+
+/* bar styling width */
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background: rgba(229, 229, 229, 0.77);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+  scroll-behavior: smooth;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5c5c5c;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #888 rgba(229, 229, 229, 0.77);
+  scrollbar-width: thin;
+}
+
+.containers {
+  scrollbar-color: #888 rgba(229, 229, 229, 0.77);
+  scrollbar-width: thin;
+}
+
+main, .containerZ, .container-contatti {
+  min-height: 100%;
+  height: 100%;
+}
+
+.sidepage-main {
+  padding-bottom: 200px;
+}
+
+.container-info, .container-contatti {
+  min-height: 100%;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.container-info h2, .container-contatti h2 {
+  font-size: 2.6em;
+  padding-bottom: 14px;
+}
+
+.container-info p, .container-contatti p {
+  font-weight: 300;
+  font-size: 1.6em;
+  padding-bottom: 40px;
+}
+
+.container-info li, .container-contatti li {
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.social-div {
+  margin-top: 200px;
+}
+
+.social-div img {
+  width: 60px;
+}
+
+.social-div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-div ul li {
+  margin-top: 10px;
+  padding-right: 30px;
+}
+
+.social-div ul li a:hover img {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+.social-div a img {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+.container-info ul {
+  margin-top: 26px;
+  margin-bottom: 60px;
+}
+
+.container-info ul li {
+  margin-bottom: 16px;
+}
+
+.container-info ul a {
+  text-decoration: underline;
+}
+
+#result {
+  width: 500px;
+  margin-left: auto;
+  margin-right: 160px;
+}
+/*# sourceMappingURL=style.css.map */

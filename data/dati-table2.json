@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "dato": "Musei aperti",
+        "numero": 30
+    },
+    {
+        "id": 2,
+        "dato": "Musei chiusi",
+        "numero": 30
+    },
+    {
+        "id": 3,
+        "dato": "Musei totali",
+        "numero": 740
+    }
+]

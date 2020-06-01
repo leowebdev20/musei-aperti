@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "regione": "Abruzzo",
+        "numero": 23
+    },
+    {
+        "id": 2,
+        "regione": "Basilicata",
+        "numero": 21
+    },
+    {
+        "id": 3,
+        "regione": "Calabria",
+        "numero": 24
+    },
+    {
+        "id": 4,
+        "regione": "Campania",
+        "numero": 108
+    },
+    {
+        "id": 5,
+        "regione": "Emilia-Romagna",
+        "numero": 43
+    },
+    {
+        "id": 6,
+        "regione": "Friuli-Venezia Giulia",
+        "numero": 19
+    },
+    {
+        "id": 7,
+        "regione": "Lazio",
+        "numero": 142
+    },
+    {
+        "id": 8,
+        "regione": "Liguria",
+        "numero": 15
+    },
+    {
+        "id": 9,
+        "regione": "Lombardia",
+        "numero": 26
+    },
+    {
+        "id": 10,
+        "regione": "Marche",
+        "numero": 31
+    },
+    {
+        "id": 11,
+        "regione": "Molise",
+        "numero": 14
+    },
+    {
+        "id": 12,
+        "regione": "Piemonte",
+        "numero": 22
+    },
+    {
+        "id": 13,
+        "regione": "Puglia",
+        "numero": 22
+    },
+    {
+        "id": 14,
+        "regione": "Sardegna",
+        "numero": 61
+    },
+    {
+        "id": 15,
+        "regione": "Sicilia",
+        "numero": 5
+    },
+    {
+        "id": 16,
+        "regione": "Toscana",
+        "numero": 72
+    },
+    {
+        "id": 17,
+        "regione": "Trentino Alto Adige",
+        "numero": 9
+    },
+    {
+        "id": 18,
+        "regione": "Umbria",
+        "numero": 14
+    },
+    {
+        "id": 19,
+        "regione": "Valle d'Aosta",
+        "numero": 10
+    },
+    {
+        "id": 20,
+        "regione": "Veneto",
+        "numero": 20
+    }
+]
