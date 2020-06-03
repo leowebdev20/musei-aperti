@@ -1,4 +1,4 @@
-// quel && searchField.length !== 0 è mio zio!
+// quel  && searchField.length !== 0 è mio zio!
 $(document).ready(function () {
     $.ajaxSetup({ cache: false });
     $('#search').keyup(function () {
@@ -94,6 +94,33 @@ $(document).ready(function () {
             numeri += '</tr>';
         });
         $('#venezia-table').append(numeri);
+    });
+});
+$(document).ready(function () {
+    $.getJSON("data/lazio-table.json", function (data) {
+        var numeri = '';
+        $.each(data, function (key, value) {
+            let apertura;  //qui metto che se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
+            if (value.aperto === undefined) {
+                apertura = "Se lo sai scrivici!";
+            } else {
+                apertura = value.aperto;
+            };
+            let programmazione;  //qui metto che se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
+            if (value.programmata === undefined) {
+                programmazione = "Se lo sai scrivici!";
+            } else {
+                programmazione = value.programmata;
+            }; // fin qui, mentre ora inizia il getting the data from the json for the table
+            numeri += '<tr>';
+            numeri += '<td>' + value.museo + '</td>';
+            numeri += '<td>' + value.citta + '</td>';
+            numeri += '<td>' + apertura + '</td>';
+            numeri += '<td>' + programmazione + '</td>';
+            numeri += '</tr>';
+
+        });
+        $('#lazio-table').append(numeri);
     });
 });
 

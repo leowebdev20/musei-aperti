@@ -5,9 +5,9 @@
         <div class="container-search">
 
             <div class="result-container containers table-responsive">
-                <h2>Venezia</h2>
-                <img src="./img/venezia.png" alt="">
-                <table id="venezia-table" class="tables table regioni-page-table">
+                <h2>Lazio</h2>
+                <img src="./img/roma.jpg" alt="">
+                <table id="lazio-table" class="tables table regioni-page-table">
                     <thead>
                         <tr>
                             <th>Museo</th>
