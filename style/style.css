@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 * {
   padding: 0;
@@ -10,6 +9,10 @@
 html, body {
   height: 100%;
   min-height: 100vh;
+}
+
+html {
+  zoom: 110%;
 }
 
 body {
@@ -67,17 +70,6 @@ a:hover, a:active, a:focus {
 
 .logo h1:hover {
   color: #c5c5c5;
-}
-
-nav input {
-  border: solid 200px #E5E5E5;
-  background: none;
-  border-radius: 25px;
-  padding: 14px;
-  width: 260px;
-  color: #F4F4F4;
-  font-size: 1.20em;
-  margin: 0 20px 0 0;
 }
 
 nav input::-webkit-input-placeholder {
@@ -139,10 +131,6 @@ li {
   margin-left: 15px;
   display: -ms-grid;
   display: grid;
-  /* one way to do it?:
-    grid-template-columns: 27% 70%;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-     */
   -ms-grid-columns: 1.2fr 3fr;
       grid-template-columns: 1.2fr 3fr;
   gap: 30px 30px;
@@ -182,24 +170,6 @@ li {
   -ms-grid-row: 5;
   -ms-grid-row-span: 4;
   grid-row: 5 / span 4;
-}
-
-/*questa era per lo styling senza table dei dati! da cancellar*/
-.containers ul {
-  font-size: 1.4em;
-  border-radius: 20px;
-}
-
-.containers ul li:nth-child(even) {
-  background: #464553;
-}
-
-.containers ul li:nth-child(odd) {
-  background: #88869B;
-}
-
-.containers ul li p {
-  margin-left: 22px;
 }
 
 .tables {
@@ -297,11 +267,6 @@ table {
   border: none;
 }
 
-/*
-.moveRight {          puoi usare questo metodo o quello sotto!! in ogni caso float right non funzia dentro un flex container!
- position: absolute;    inoltre float sembra un po superato, perché non flessibile in caso di responsive, sempre meglio usare appunto flexbox or grid
- right: 70px;
-} */
 form {
   margin-left: auto;
   margin-right: 70px;
@@ -319,15 +284,6 @@ body {
           flex-direction: column;
 }
 
-/*
-main {                       non so cosa sia sta voce
- display: block;
- flex: 1 0 auto;
-} */
-/*
-footer {                     questo sembra andare dai, per il footer non fixed (ma cmq molto provvisorio)
- margin-top:calc(5% + 300px);
-} */
 footer {
   z-index: 10;
   position: fixed;
@@ -337,17 +293,6 @@ footer {
 
 footer ul {
   margin-bottom: 0px;
-}
-
-/*se lasci invece il footer fixed questa del contenuto scrollable può essere 1 soluzione => */
-.containerZCONSCROLL {
-  position: absolute;
-  top: 100px;
-  width: 80%;
-  height: 800px;
-  /* assumed height, use an appropriate value */
-  overflow: scroll;
-  margin-left: 10%;
 }
 
 .containerZ {
@@ -372,12 +317,7 @@ footer ul {
   position: absolute;
   top: 100px;
   width: 80%;
-  /* questi due sono per scrollare il contenuto con una secondaria scrollbar come soluzione per il fixed footer (che va over content)
-    height: 800px;      (assumed height, use an appropriate value)
-    overflow: scroll;
-    */
   margin-left: 10%;
-  /* questo è styling sempre relativo al fixed footer così non va sul content ma senza l'ulteriore scrollbar data dai due parametri commentati sopra*/
   margin-bottom: 200px;
 }
 

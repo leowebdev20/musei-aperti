@@ -1,6 +1,6 @@
 // GLOBALS
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-$background: #464553;   //oppure 41404E
+$background: #464553;  
 $primary: #36A381;
 $text: #F4F4F4;
 $hover: #c5c5c5;
@@ -16,7 +16,9 @@ $selection: #7cd2b7;
 html, body{
     height: 100%;
     min-height: 100vh;
-
+}
+html {
+    zoom: 110%;
 }
 //GENERAL STYLE
 body {
@@ -32,7 +34,7 @@ a {
     color: $text;
     text-decoration: none;
 }
-textarea:focus, input:focus {  //non va?
+textarea:focus, input:focus { 
     outline: none;
 }
 a:hover, a:active, a:focus{  //style standard x gli anchor
@@ -62,16 +64,6 @@ a:hover, a:active, a:focus{  //style standard x gli anchor
         &:hover {
             color: $hover;
         }
-}
-nav input {   // da cancellare??
-    border: solid 200px $outline;
-    background: none;
-    border-radius: 25px;
-    padding: 14px;
-    width: 260px;
-    color: $text;
-    font-size: 1.20em;
-    margin: 0 20px 0 0;
 }
 nav input::placeholder {
     color: $placeholder;
@@ -107,15 +99,7 @@ li {
     margin-top: 40px;
     margin-left: 15px;
     display: grid;
-    /* one way to do it?:
-    grid-template-columns: 27% 70%;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-     */
     grid-template-columns: 1.2fr 3fr;
-    // grid-template-rows: repeat(10, 1fr);    questo è metodo forse vecchio? Cmq 1 alternativa: fai semplicemente grid-auto-rows: 10% e gioca poi con la ripartizione delle rows sotto?Ma rimane il problema che + contenuto metti + le grid rows si allungano e quindi gli altri container diventan mezzi vuoti.  Infine il metodo piu corretto sembra: grid-auto-rows: minmax(10%, min-content) però non riesco a far stare le regioni x es tutte intere e cmq devo poi mettere un po di padding bottom alle tabelle
-   // grid-auto-rows: minmax(10%, min-content);    ! !  ! ! ! !!  ! !  ! ! ! !!  ! !  ! ! ! !! 
-   // grid-auto-rows: minmax(1fr, min-content);
-   // grid-auto-rows: minmax(1fr, min-content);
    gap: 30px 30px;
 }
 .dati-container {
@@ -134,20 +118,6 @@ li {
    grid-column: 2 / 3;
    grid-row: 5 / span 4;
 }
-
-/*questa era per lo styling senza table dei dati! da cancellar*/
-.containers ul {
-   //   margin-left: 22px;
-   //   margin-right: 22px;
-   font-size: 1.4em;
-   border-radius: 20px;
-li:nth-child(even) {background: $background}
-li:nth-child(odd) {background: $alternative}
-li p {
-    margin-left: 22px;
-   }
-}
-
 .tables {
     margin: 10px 22px;
     table-layout: fixed;
@@ -215,12 +185,6 @@ left: 0;
  background: none;
  border: none;
 }
-  
-/*
-.moveRight {          puoi usare questo metodo o quello sotto!! in ogni caso float right non funzia dentro un flex container!
- position: absolute;    inoltre float sembra un po superato, perché non flessibile in caso di responsive, sempre meglio usare appunto flexbox or grid
- right: 70px;
-} */
 form {
  margin-left: auto;
  margin-right: 70px;
@@ -231,17 +195,6 @@ body {
  min-height: 100vh;
  flex-direction: column;
 }
-
-/*
-main {                       non so cosa sia sta voce
- display: block;
- flex: 1 0 auto;
-} */
-  
-/*
-footer {                     questo sembra andare dai, per il footer non fixed (ma cmq molto provvisorio)
- margin-top:calc(5% + 300px);
-} */
 footer {
   z-index: 10;
   position: fixed;      
@@ -251,30 +204,17 @@ footer {
       margin-bottom: 0px;
 }
 }
-/*se lasci invece il footer fixed questa del contenuto scrollable può essere 1 soluzione => */
-.containerZCONSCROLL {  //credo si possa togliere
-    position: absolute;
-    top: 100px;
-    width: 80%;
-    height: 800px; /* assumed height, use an appropriate value */
-    overflow: scroll;
-    margin-left: 10%;
-}
 .containerZ {
-    // ho tolto absolute   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     position: relative;    
     top: 100px;
     width: 80%;
-    // height: 800px; /* assumed height, use an appropriate value */
-    // overflow: scroll;
     margin-left: 10%;
     margin-bottom: 300px;
         .tables {
             margin-top: 20px;
             margin-bottom: 0px;
-            overflow: scroll; //????? voglio far scrollare solo quando c'è tanta roba
+            overflow: scroll; 
         }
-    
 }
 #dati-table, #recenti-table, #programmate-table, #regioni-table {
     margin-bottom: 50px;
@@ -283,12 +223,7 @@ footer {
     position: absolute;
     top: 100px;
     width: 80%;
-    /* questi due sono per scrollare il contenuto con una secondaria scrollbar come soluzione per il fixed footer (che va over content)
-    height: 800px;      (assumed height, use an appropriate value)
-    overflow: scroll;
-    */
     margin-left: 10%;
-    /* questo è styling sempre relativo al fixed footer così non va sul content ma senza l'ulteriore scrollbar data dai due parametri commentati sopra*/
     margin-bottom: 200px;
         .regioni-page-table {
             margin-top: 60px;
@@ -313,9 +248,6 @@ tbody {
     tr:nth-child(odd) {background: $background}
 }
 
-// .regioni-container {
-//     margin-bottom: 200px;
-// }
 // Selected text styling
 ::-moz-selection { color: $text}
 ::selection { color: $text; }
@@ -356,16 +288,6 @@ html {
     scrollbar-width: thin;
 }
 // FINE BAR FIREFOX
-//qui ho cercato di nascondere gli angoli della bar ma riesce però nascondendo a metà il regione-container
-// .regioni-container {
-//     height: 100%;
-//     overflow-y: auto;
-//     border-radius: 20px;
-// }
-// .reg {
-//     overflow: hidden;
-//     border-radius: 80px;
-// } 
   
 main, .containerZ, .container-contatti {
     min-height: 100%;
@@ -416,7 +338,7 @@ main, .containerZ, .container-contatti {
 .social-div a img {
     transition: transform 200ms ease-out;
 }
-//Inizio style pagine di phptest
+
 //pagina info
 .container-info {
     ul {
@@ -436,7 +358,7 @@ main, .containerZ, .container-contatti {
     margin-left: auto;
     margin-right: 160px;
 }
-// cursor  per il sorting delle tables
+// cursor event  per il sorting delle tabelle
 th.sort {
     cursor: pointer;
 }
