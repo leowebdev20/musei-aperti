@@ -7,6 +7,7 @@ $hover: #c5c5c5;
 $outline: #E5E5E5;
 $placeholder: rgba(229, 229, 229, 0.77);
 $alternative: #88869B;
+$selection: #7cd2b7;
 * {
     padding: 0;
     margin: 0;
@@ -315,7 +316,11 @@ tbody {
 // .regioni-container {
 //     margin-bottom: 200px;
 // }
-
+// Selected text styling
+::-moz-selection { color: $text}
+::selection { color: $text; }
+::-moz-selection { background: $selection; }
+::selection { background: $selection; }
 /* bar styling width */
 /* width */
 ::-webkit-scrollbar {
@@ -430,4 +435,8 @@ main, .containerZ, .container-contatti {
     width: 500px;
     margin-left: auto;
     margin-right: 160px;
+}
+// cursor  per il sorting delle tables
+th.sort {
+    cursor: pointer;
 }

@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musei Aperti</title>
+    <link rel="icon" href="./img\favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/9ac106635a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./main.js" defer></script>
+
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="nav-container">
+            <a href="http://127.0.0.1:5500/index.html"><img src="./img\logomuseiaperti.png" class="logomuseiaperti"
+                    alt="logo-museiaperti"></a>
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/index.html">
+                    <h1>MuseiAperti.it</h1>
+                </a>
+            </div>
+            <form action="javascript:redirect()" autocomplete="off" class="moveRight">
+                <input type="search" name="search" id="search" class="form-control"
+                    placeholder="Cerca la tua Regione...">
+                <ul class="lista list-group" id="result"></ul>
+                <button type="submit">
+                    <img src="./img\lente2.png" class="search-icon" alt="search-icon">
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="sidepage-main">
+
+        <div class="container-contatti">
+
+            <h2>
+                Chi sono
+            </h2>
+            <p>
+                Mi chiamo Leonardo Seren e sono uno Storico dell'Arte di Venezia. Dal 2019 ho intrapreso anche il
+                percorso di Web Developer Front-End. A causa dell'attuale crisi ho pensato che questa mia conoscenza e
+                la mia passione per i musei potessero essere messe in pratica, perciò ho voluto creare questo portale.
+                </br> Spero possa essere utile a chiunque voglia godersi i musei del nostro territorio!
+            </p>
+            <h2>
+                Contattami per segnalazioni o suggerimenti
+            </h2>
+            <p>
+                <a href="mailto:leonardoseren@gmail.com">leonardoseren@gmail.com</a>
+            </p>
+            <div class="social-div">
+                <h2>
+                    Dove mi trovi
+                </h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/leonardoseren/" target="_blank"><img src="./img/li.png"
+                                alt="linkedin"></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/leonardo.seren/" target="_blank"><img src="./img/fb.png"
+                                alt="facebook"></a>
+                    </li>
+                    <li><a href="https://github.com/leowebdev20" target="_blank"><img src="./img/gh.png"
+                                alt="github"></a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <ul class="links">
+                <li id="home" class="home"><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li class="contact"><a href="http://127.0.0.1:5500/contatti.html">Contatti</a></li>
+                <li class="info"><a href="http://127.0.0.1:5500/info.html">Informazioni utili</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

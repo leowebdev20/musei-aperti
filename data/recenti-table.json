@@ -1,254 +1,138 @@
 [
     {
         "id": 1,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Concordia Sagittaria, area archeologica sotto la Cattedrale",
+        "regione": "Veneto",
+        "citta": "Concordia Sagittaria",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "2 giugno 2020"
     },
     {
         "id": 2,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Villa del Bene",
+        "regione": "Veneto",
+        "citta": "Dolcè",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "2 giugno 2020"
     },
     {
         "id": 3,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Area archeologica di Feltre",
+        "regione": "Veneto",
+        "citta": "Feltre",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "1 giugno 2020"
     },
     {
         "id": 4,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Museo archeologico nazionale Concordiese",
+        "regione": "Veneto",
+        "citta": "Portogruaro",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "1 giugno 2020"
     },
     {
         "id": 5,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Museo nazionale di Villa Pisani",
+        "regione": "Veneto",
+        "citta": "Stra",
         "aperto": "Sì",
         "programmata": "18 maggio 2020"
     },
     {
         "id": 6,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Gallerie dell’Accademia di Venezia",
+        "regione": "Veneto",
+        "citta": "Venezia",
+        "aperto": "Sì",
+        "programmata": "26 maggio 2020"
+    },
+    {
+        "id": 7,
+        "museo": "Casa di San Tommaso D’Aquino",
+        "regione": "Lazio",
+        "citta": "Aquino",
         "aperto": "Sì",
         "programmata": "18 maggio 2020"
     },
     {
-        "id": 2,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 8,
+        "museo": "Museo Giacomo Manzù",
+        "regione": "Lazio",
+        "citta": "Ardea",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "19 maggio 2020"
     },
     {
-        "id": 3,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 9,
+        "museo": "Torre di Cicerone",
+        "regione": "Lazio",
+        "citta": "Arpino",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "20 maggio 2020"
     },
     {
-        "id": 4,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 10,
+        "museo": "Villa Giustiniani Odescalchi",
+        "regione": "Lazio",
+        "citta": "Bassano Romano",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "21 maggio 2020"
     },
     {
-        "id": 5,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 11,
+        "museo": "Area archeologica di Volsinii",
+        "regione": "Lazio",
+        "citta": "Bolsena",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "26 maggio 2020"
     },
     {
-        "id": 6,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 12,
+        "museo": "Area della città etrusco-romana di Vulci",
+        "regione": "Lazio",
+        "citta": "Canino",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "27 maggio 2020"
     },
     {
-        "id": 2,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 13,
+        "museo": "Museo archeologico nazionale di Vulci",
+        "regione": "Lazio",
+        "citta": "Canino",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "28 maggio 2020"
     },
     {
-        "id": 3,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 14,
+        "museo": "Tomba François",
+        "regione": "Lazio",
+        "citta": "Canino",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "29 maggio 2020"
     },
     {
-        "id": 4,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 16,
+        "museo": "Palazzo Farnese",
+        "regione": "Lazio",
+        "citta": "Caprarola",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "1 giugno 2020"
     },
     {
-        "id": 5,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 18,
+        "museo": "Museo archeologico nazionale “G. Carettoni” e Area archeologica di Casinum",
+        "regione": "Lazio",
+        "citta": "Cassino",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "2 giugno 2020"
     },
     {
-        "id": 6,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "id": 19,
+        "museo": "Museo nazionale archeologico Cerite",
+        "regione": "Lazio",
+        "citta": "Cerveteri",
         "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 2,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 3,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 4,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 5,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 6,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 2,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 3,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 4,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 5,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 6,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 2,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 3,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 4,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 5,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 6,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 2,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 3,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 4,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 5,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
-    },
-    {
-        "id": 6,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
-        "aperto": "Sì",
-        "programmata": "18 maggio 2020"
+        "programmata": "3 giugno 2020"
     }
 ]

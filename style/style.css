@@ -408,6 +408,22 @@ tbody tr:nth-child(odd) {
   background: #464553;
 }
 
+::-moz-selection {
+  color: #F4F4F4;
+}
+
+::selection {
+  color: #F4F4F4;
+}
+
+::-moz-selection {
+  background: #7cd2b7;
+}
+
+::selection {
+  background: #7cd2b7;
+}
+
 /* bar styling width */
 /* width */
 ::-webkit-scrollbar {
@@ -524,5 +540,9 @@ main, .containerZ, .container-contatti {
   width: 500px;
   margin-left: auto;
   margin-right: 160px;
+}
+
+th.sort {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

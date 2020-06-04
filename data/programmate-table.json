@@ -1,44 +1,50 @@
 [
     {
         "id": 1,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Museo archeologico nazionale della Laguna",
+        "regione": "Veneto",
+        "citta": "Venezia",
         "aperto": "No",
-        "programmata": "25 maggio 2020"
+        "programmata": "13 giugno 2020"
     },
     {
         "id": 2,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Museo archeologico nazionale di Venezia",
+        "regione": "Veneto",
+        "citta": "Venezia",
         "aperto": "No",
-        "programmata": "25 maggio 2020"
+        "programmata": "13 giugno 2020"
     },
     {
         "id": 3,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Museo di Palazzo Grimani",
+        "regione": "Veneto",
+        "citta": "Venezia",
         "aperto": "No",
-        "programmata": "25 maggio 2020"
+        "programmata": "13 giugno 2020"
     },
     {
         "id": 4,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Museo d’arte orientale",
+        "regione": "Veneto",
+        "citta": "Venezia",
         "aperto": "No",
-        "programmata": "25 maggio 2020"
+        "programmata": "13 giugno 2020"
     },
     {
         "id": 5,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Biblioteca Marciana",
+        "regione": "Veneto",
+        "citta": "Venezia",
         "aperto": "No",
-        "programmata": "25 maggio 2020"
+        "programmata": "13 giugno 2020"
     },
     {
         "id": 6,
-        "museo": "Palazzo Ducale",
-        "luogo": "Venezia",
+        "museo": "Museo archeologico nazionale di Verona",
+        "regione": "Veneto",
+        "citta": "Verona",
         "aperto": "No",
-        "programmata": "25 maggio 2020"
+        "programmata": "13 giugno 2020"
     }
 ]

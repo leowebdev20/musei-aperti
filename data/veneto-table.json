@@ -1,0 +1,154 @@
+[
+    {
+        "id": 1,
+        "museo": "Museo archeologico nazionale di Adria",
+        "regione": "Veneto",
+        "citta": "Adria",
+        "aperto": "No"
+    },
+    {
+        "id": 2,
+        "museo": "Museo nazionale di archeologia del mare",
+        "regione": "Veneto",
+        "citta": "Caorle",
+        "aperto": "No"
+    },
+    {
+        "id": 3,
+        "museo": "Concordia Sagittaria, area archeologica sotto la Cattedrale",
+        "regione": "Veneto",
+        "citta": "Concordia Sagittaria",
+        "aperto": "Sì",
+        "programmata": "2 giugno 2020"
+    },
+    {
+        "id": 4,
+        "museo": "Villa del Bene",
+        "regione": "Veneto",
+        "citta": "Dolcè",
+        "aperto": "Sì",
+        "programmata": "2 giugno 2020"
+    },
+    {
+        "id": 5,
+        "museo": "Museo nazionale Atestino",
+        "regione": "Veneto",
+        "citta": "Este",
+        "aperto": "No"
+    },
+    {
+        "id": 6,
+        "museo": "Area archeologica di Feltre",
+        "regione": "Veneto",
+        "citta": "Feltre",
+        "aperto": "Sì",
+        "programmata": "1 giugno 2020"
+    },
+    {
+        "id": 7,
+        "museo": "Museo archeologico nazionale (Barchessa di Villa Badoer)",
+        "regione": "Veneto",
+        "citta": "Fratta Polesine",
+        "aperto": "No"
+    },
+    {
+        "id": 8,
+        "museo": "Museo archeologico nazionale Concordiese",
+        "regione": "Veneto",
+        "citta": "Portogruaro",
+        "aperto": "Sì",
+        "programmata": "1 giugno 2020"
+    },
+    {
+        "id": 9,
+        "museo": "Area archeologica di Quarto d’Altino",
+        "regione": "Veneto",
+        "citta": "Quarto D'Altino",
+        "aperto": "No"
+    },
+    {
+        "id": 10,
+        "museo": "Museo Archeologico Nazionale e Area Archeologica di Altino",
+        "regione": "Veneto",
+        "citta": "Quarto D'Altino",
+        "aperto": "No"
+    },
+    {
+        "id": 11,
+        "museo": "Museo nazionale di Villa Pisani",
+        "regione": "Veneto",
+        "citta": "Stra",
+        "aperto": "Si",
+        "programmata": "18 maggio 2020"
+    },
+    {
+        "id": 12,
+        "museo": "Museo nazionale Collezione Salce",
+        "regione": "Veneto",
+        "citta": "Treviso",
+        "aperto": "No"
+    },
+    {
+        "id": 13,
+        "museo": "Galleria Giorgio Franchetti alla Ca’ d’Oro",
+        "regione": "Veneto",
+        "citta": "Venezia",
+        "aperto": "No"
+    },
+    {
+        "id": 14,
+        "museo": "Gallerie dell’Accademia di Venezia",
+        "regione": "Veneto",
+        "citta": "Venezia",
+        "aperto": "Sì",
+        "programmata": "26 maggio 2020"
+    },
+    {
+        "id": 15,
+        "museo": "Museo archeologico nazionale della Laguna di Venezia",
+        "regione": "Veneto",
+        "citta": "Venezia",
+        "aperto": "No",
+        "programmata": "13 giugno 2020"
+    },
+    {
+        "id": 16,
+        "museo": "Museo archeologico nazionale di Venezia",
+        "regione": "Veneto",
+        "citta": "Venezia",
+        "aperto": "No",
+        "programmata": "13 giugno 2020"
+    },
+    {
+        "id": 17,
+        "museo": "Museo di Palazzo Grimani",
+        "regione": "Veneto",
+        "citta": "Venezia",
+        "aperto": "No",
+        "programmata": "13 giugno 2020"
+    },
+    {
+        "id": 18,
+        "museo": "Museo d’arte orientale",
+        "regione": "Veneto",
+        "citta": "Venezia",
+        "aperto": "No",
+        "programmata": "13 giugno 2020"
+    },
+    {
+        "id": 19,
+        "museo": "Sale monumentali della Biblioteca nazionale Marciana",
+        "regione": "Veneto",
+        "citta": "Venezia",
+        "aperto": "No",
+        "programmata": "13 giugno 2020"
+    },
+    {
+        "id": 20,
+        "museo": "Museo archeologico nazionale di Verona",
+        "regione": "Veneto",
+        "citta": "Verona",
+        "aperto": "No",
+        "programmata": "13 giugno 2020"
+    }
+]
