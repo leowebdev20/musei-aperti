@@ -88,7 +88,6 @@ li {
 .containers {
     border: solid 2px $outline;
     border-radius: 13px;
-
     h2 {
         padding: 15px 0 15px 22px;
         font-size: 2em;
@@ -362,3 +361,190 @@ main, .containerZ, .container-contatti {
 th.sort {
     cursor: pointer;
 }
+// responsiveness
+@media only screen and (max-width: 600px) {
+    .nav-container img {
+        width: 40px;
+    }
+    .nav-container .logomuseiaperti {
+        margin: 0 10px;
+    }
+    .logo h1 {
+        font-size: 1.2em;
+    }
+    form button {
+        display: none;
+    }
+    .form-control {
+        width: 200px;
+        border: solid 1px rgb(219, 219, 219);
+        background: $text;
+        border-radius: 25px;
+        height: 32px;
+        color: $background;
+        font-size: 1.1em;
+      }
+      .links li{
+        margin: 10px 10px 14px 10px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    .containerZ {
+        min-height: 100%;
+        margin-top: 40px;
+        margin-left: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px 12px;
+    }
+    .dati-container {
+       grid-column: 1;
+       grid-row: 1 / span 2;
+    }
+    .regioni-container {
+       grid-column: 1;
+       grid-row: 3 / span 2;
+    }
+    .recenti-container {
+       grid-column: 1;
+       grid-row: 5 / span 4;
+    }
+    .programmate-container {
+       grid-column: 1;
+       grid-row: 9 / span 4;
+    }
+    .containers {
+        border: solid 1px $outline;
+        border-radius: 13px;
+        
+        overflow-y: scroll;
+        // overflow-x: hidden;
+        width: 100%;
+        h2 {
+            padding: 10px 0 10px 15px;
+            font-size: 1.2em;
+        }
+    }
+    .tables {
+        table-layout: fixed;
+        width: 100%;
+    }
+    th {
+        font-size: 1em;
+        font-weight: bolder;
+    }
+    td {
+        font-size: 1em;
+    }
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    .containerZ {
+        position: relative;
+        top: 20px;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 100px;
+    }
+    #dati-table, #recenti-table, #programmate-table, #regioni-table {
+        margin-bottom: 50px;
+    }
+    .containerZ .tables {
+        margin-top: 0px;
+    }
+    #recenti-table {
+        font-size: 1em;
+        overflow: hidden;
+    }
+    .recenti-container {
+        
+            table {
+                width: 100%;
+            }
+                /* Force table to not be like tables anymore */
+            table, thead, tbody, th, td, tr { 
+                display: block; 
+            }
+            
+            /* Hide table headers (but not display: none;, for accessibility) */
+            thead tr { 
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            
+            tr { border: 1px solid #ccc; }
+            
+            td { 
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee; 
+                position: relative;
+                padding-left: 50%; 
+            }
+            
+            td:before { 
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%; 
+                padding-right: 10px; 
+                white-space: nowrap;
+            }
+            
+          
+
+        }
+        #programmate-table {
+            font-size: 1em;
+            overflow: hidden;
+        }
+        .programmate-container {
+            
+                table {
+                    width: 100%;
+                }
+                    /* Force table to not be like tables anymore */
+                table, thead, tbody, th, td, tr { 
+                    display: block; 
+                }
+                
+                /* Hide table headers (but not display: none;, for accessibility) */
+                thead tr { 
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+                
+                tr { border: 1px solid #ccc; }
+                
+                td { 
+                    /* Behave  like a "row" */
+                    border: none;
+                    border-bottom: 1px solid #eee; 
+                    position: relative;
+                    padding-left: 50%; 
+                }
+                
+                td:before { 
+                    /* Now like a table header */
+                    position: absolute;
+                    /* Top/left values mimic padding */
+                    top: 6px;
+                    left: 6px;
+                    width: 45%; 
+                    padding-right: 10px; 
+                    white-space: nowrap;
+                }
+                
+              
+    
+            }
+
+
+
+
+  }

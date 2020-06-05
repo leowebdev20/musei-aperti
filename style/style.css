@@ -485,4 +485,187 @@ main, .containerZ, .container-contatti {
 th.sort {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .nav-container img {
+    width: 40px;
+  }
+  .nav-container .logomuseiaperti {
+    margin: 0 10px;
+  }
+  .logo h1 {
+    font-size: 1.2em;
+  }
+  form button {
+    display: none;
+  }
+  .form-control {
+    width: 200px;
+    border: solid 1px #dbdbdb;
+    background: #F4F4F4;
+    border-radius: 25px;
+    height: 32px;
+    color: #464553;
+    font-size: 1.1em;
+  }
+  .links li {
+    margin: 10px 10px 14px 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  .containerZ {
+    min-height: 100%;
+    margin-top: 40px;
+    margin-left: 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 12px 12px;
+  }
+  .dati-container {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+  }
+  .regioni-container {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3 / span 2;
+  }
+  .recenti-container {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5 / span 4;
+  }
+  .programmate-container {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 4;
+    grid-row: 9 / span 4;
+  }
+  .containers {
+    border: solid 1px #E5E5E5;
+    border-radius: 13px;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  .containers h2 {
+    padding: 10px 0 10px 15px;
+    font-size: 1.2em;
+  }
+  .tables {
+    table-layout: fixed;
+    width: 100%;
+  }
+  th {
+    font-size: 1em;
+    font-weight: bolder;
+  }
+  td {
+    font-size: 1em;
+  }
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .containerZ {
+    position: relative;
+    top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 100px;
+  }
+  #dati-table, #recenti-table, #programmate-table, #regioni-table {
+    margin-bottom: 50px;
+  }
+  .containerZ .tables {
+    margin-top: 0px;
+  }
+  #recenti-table {
+    font-size: 1em;
+    overflow: hidden;
+  }
+  .recenti-container {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  .recenti-container table {
+    width: 100%;
+  }
+  .recenti-container table, .recenti-container thead, .recenti-container tbody, .recenti-container th, .recenti-container td, .recenti-container tr {
+    display: block;
+  }
+  .recenti-container thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .recenti-container tr {
+    border: 1px solid #ccc;
+  }
+  .recenti-container td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  .recenti-container td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  #programmate-table {
+    font-size: 1em;
+    overflow: hidden;
+  }
+  .programmate-container {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  .programmate-container table {
+    width: 100%;
+  }
+  .programmate-container table, .programmate-container thead, .programmate-container tbody, .programmate-container th, .programmate-container td, .programmate-container tr {
+    display: block;
+  }
+  .programmate-container thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .programmate-container tr {
+    border: 1px solid #ccc;
+  }
+  .programmate-container td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  .programmate-container td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
 /*# sourceMappingURL=style.css.map */
