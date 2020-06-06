@@ -486,7 +486,7 @@ th.sort {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   .nav-container img {
     width: 40px;
   }
@@ -550,6 +550,9 @@ th.sort {
     -ms-grid-row: 9;
     -ms-grid-row-span: 4;
     grid-row: 9 / span 4;
+  }
+  .container-search {
+    margin-bottom: 100px;
   }
   .containers {
     border: solid 1px #E5E5E5;
@@ -666,6 +669,24 @@ th.sort {
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    width: 110%;
+  }
+  .nav-container img {
+    display: none;
+  }
+  .nav-container .logo {
+    margin-left: 16px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  body {
+    width: 120%;
   }
 }
 /*# sourceMappingURL=style.css.map */
