@@ -34,18 +34,18 @@ $(document).ready(function () {
             $.getJSON('./data/veneto-table.json', function (data) {
                 var numeri = '';
                 $.each(data, function (key, value) {
-                    let apertura;  //qui metto che se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
+                    let apertura;  //se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
                     if (value.aperto === undefined) {
                         apertura = "Se lo sai scrivici!";
                     } else {
                         apertura = value.aperto;
                     };
-                    let programmazione;  //qui metto che se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
+                    let programmazione;  //se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
                     if (value.programmata === undefined) {
                         programmazione = "Se lo sai scrivici!";
                     } else {
                         programmazione = value.programmata;
-                    };             // parte del getting the data from the json for the table
+                    };             // parte del getting the data from the json for the table, se l'utente conferma la ricerca con l'esatto nome della regione, per ora solo per il Veneto
                     if (searchField.toLowerCase() === "veneto") {
                         numeri += '<tr>';
                         numeri += '<td>' + value.museo + '</td>';
@@ -148,13 +148,13 @@ $(document).ready(function () {
     $.getJSON("data/veneto-table.json", function (data) {
         var numeri = '';
         $.each(data, function (key, value) {
-            let apertura;  //qui metto che se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
+            let apertura;  //se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
             if (value.aperto === undefined) {
                 apertura = "Se lo sai scrivici!";
             } else {
                 apertura = value.aperto;
             };
-            let programmazione;  //qui metto che se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
+            let programmazione;  //se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
             if (value.programmata === undefined) {
                 programmazione = "Se lo sai scrivici!";
             } else {
@@ -177,13 +177,13 @@ $(document).ready(function () {
     $.getJSON("data/lazio-table.json", function (data) {
         var numeri = '';
         $.each(data, function (key, value) {
-            let apertura;  //qui metto che se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
+            let apertura;  //se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
             if (value.aperto === undefined) {
                 apertura = "Se lo sai scrivici!";
             } else {
                 apertura = value.aperto;
             };
-            let programmazione;  //qui metto che se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
+            let programmazione;  //se il dato è non definito ritorno un messaggio altrimenti ritorno il dato
             if (value.programmata === undefined) {
                 programmazione = "Se lo sai scrivici!";
             } else {
