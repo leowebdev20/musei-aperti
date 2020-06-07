@@ -17,7 +17,6 @@
 
 <body>
 
-
     <nav>
         <div class="nav-container">
             <a href="#"><img src="./img\logomuseiaperti.png" class="logomuseiaperti" alt="logo-museiaperti"></a>
@@ -40,28 +39,8 @@
 
     <main>
 
-        <div class="container-search">
-            <div id="results-container" class="containers result-container  table-responsive">
-                <h2>Veneto</h2>
-                <img src="./img/venezia2.jpg" alt="">
-
-                <table id="results-table" class="table tables  regioni-page-table">
-                    <thead>
-                        <tr>
-                            <th class="sort" onclick="sortResults(0)"></i>Museo <i class="fas fa-sort"></th>
-                            <th class="sort" onclick="sortResults(1)"></i>Luogo <i class="fas fa-sort"></th>
-                            <th class="sort" onclick="sortResults(2)">Aperto <i class="fas fa-sort"></th>
-                            <th class="sort" onclick="sortResults(3)">Data di Apertura<i class="fas fa-sort"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-
         <div class="containerZ">
+
             <div class="dati-container containers table-responsive">
                 <h2>I Dati Aggiornati</h2>
                 <table id="dati-table" class="table tables dati-table">
@@ -75,7 +54,6 @@
                     </tbody>
                 </table>
             </div>
-
 
             <div class="regioni-container  containers  table-responsive">
                 <h2>Musei per Regione</h2>
@@ -91,8 +69,6 @@
                     </tbody>
                 </table>
             </div>
-
-
 
             <div class="recenti-container  containers  table-responsive">
                 <h2>Recenti aperture</h2>
@@ -126,12 +102,28 @@
                 </table>
             </div>
 
-
-
         </div>
 
 
+        <div class="container-search">
+            <div id="results-container" class="containers result-container  table-responsive">
+                <h2>Veneto</h2>
+                <img src="./img/venezia2.jpg" alt="">
 
+                <table id="results-table" class="table tables  regioni-page-table">
+                    <thead>
+                        <tr>
+                            <th class="sort" onclick="sortResults(0)"></i>Museo <i class="fas fa-sort"></th>
+                            <th class="sort" onclick="sortResults(1)"></i>Luogo <i class="fas fa-sort"></th>
+                            <th class="sort" onclick="sortResults(2)">Aperto <i class="fas fa-sort"></th>
+                            <th class="sort" onclick="sortResults(3)">Data di Apertura<i class="fas fa-sort"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
 
     </main>
