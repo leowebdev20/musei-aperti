@@ -47,12 +47,14 @@ $(document).ready(function () {
                         programmazione = value.programmata;
                     };             // parte del getting the data from the json for the table, se l'utente conferma la ricerca con l'esatto nome della regione, per ora solo per il Veneto
                     if (searchField.toLowerCase() === "veneto") {
-                        numeri += '<tr>';
-                        numeri += '<td>' + value.museo + '</td>';
-                        numeri += '<td>' + value.citta + '</td>';
-                        numeri += '<td>' + apertura + '</td>';
-                        numeri += '<td>' + programmazione + '</td>';
-                        numeri += '</tr>';
+                        numeri += `
+                        <tr>
+                            <td>${value.museo}</td>;
+                            <td>${value.citta}</td>;
+                            <td>${apertura}</td>;
+                            <td>${programmazione}</td>;
+                        </tr>
+                        `;
                     }
                 });
                 $('#results-table').append(numeri);
@@ -88,10 +90,12 @@ $(document).ready(function () {
     $.getJSON("data/dati-table.json", function (data) {
         var numeri = '';
         $.each(data, function (key, value) {
-            numeri += '<tr>';
-            numeri += '<td>' + value.dato + '</td>';
-            numeri += '<td>' + value.numero + '</td>';
-            numeri += '</tr>';
+            numeri += `
+            <tr>
+                <td>${value.dato}</td>;
+                <td>${value.numero}</td>;
+            </tr>
+            `;
         });
         $('#dati-table').append(numeri);
     });
@@ -102,10 +106,12 @@ $(document).ready(function () {
     $.getJSON("data/regioni-table.json", function (data) {
         var numeri = '';
         $.each(data, function (key, value) {
-            numeri += '<tr>';
-            numeri += '<td>' + value.regione + '</td>';
-            numeri += '<td>' + value.numero + '</td>';
-            numeri += '</tr>';
+            numeri += `
+            <tr>
+                <td>${value.regione}</td>;
+                <td>${value.numero}</td>;
+            </tr>
+            `;
         });
         $('#regioni-table').append(numeri);
     });
@@ -116,12 +122,14 @@ $(document).ready(function () {
     $.getJSON("data/recenti-table.json", function (data) {
         var numeri = '';
         $.each(data, function (key, value) {
-            numeri += '<tr>';
-            numeri += '<td>' + value.museo + '</td>';
-            numeri += '<td>' + value.citta + '</td>';
-            numeri += '<td>' + value.aperto + '</td>';
-            numeri += '<td>' + value.programmata + '</td>';
-            numeri += '</tr>';
+            numeri += `
+            <tr>
+                <td>${value.museo}</td>;
+                <td>${value.citta}</td>;
+                <td>${value.aperto}</td>;
+                <td>${value.programmata}</td>;
+            </tr>
+            `;
         });
         $('#recenti-table').append(numeri);
     });
@@ -132,12 +140,14 @@ $(document).ready(function () {
     $.getJSON("data/programmate-table.json", function (data) {
         var numeri = '';
         $.each(data, function (key, value) {
-            numeri += '<tr>';
-            numeri += '<td>' + value.museo + '</td>';
-            numeri += '<td>' + value.citta + '</td>';
-            numeri += '<td>' + value.aperto + '</td>';
-            numeri += '<td>' + value.programmata + '</td>';
-            numeri += '</tr>';
+            numeri += `
+            <tr>
+                <td>${value.museo}</td>;
+                <td>${value.citta}</td>;
+                <td>${value.aperto}</td>;
+                <td>${value.programmata}</td>;
+            </tr>
+            `;
         });
         $('#programmate-table').append(numeri);
     });
@@ -160,13 +170,14 @@ $(document).ready(function () {
             } else {
                 programmazione = value.programmata;
             };             // parte del getting the data from the json for the table
-            numeri += '<tr>';
-            numeri += '<td>' + value.museo + '</td>';
-            numeri += '<td>' + value.citta + '</td>';
-            numeri += '<td>' + apertura + '</td>';
-            numeri += '<td>' + programmazione + '</td>';
-            numeri += '</tr>';
-
+            numeri += `
+            <tr>
+                <td>${value.museo}</td>;
+                <td>${value.citta}</td>;
+                <td>${apertura}</td>;
+                <td>${programmazione}</td>;
+            </tr>
+            `;
         });
         $('#veneto-table').append(numeri);
     });
@@ -189,13 +200,14 @@ $(document).ready(function () {
             } else {
                 programmazione = value.programmata;
             }; // fin qui, mentre ora inizia il getting the data from the json for the table
-            numeri += '<tr>';
-            numeri += '<td>' + value.museo + '</td>';
-            numeri += '<td>' + value.citta + '</td>';
-            numeri += '<td>' + apertura + '</td>';
-            numeri += '<td>' + programmazione + '</td>';
-            numeri += '</tr>';
-
+            numeri += `
+            <tr>
+                <td>${value.museo}</td>;
+                <td>${value.citta}</td>;
+                <td>${apertura}</td>;
+                <td>${programmazione}</td>;
+            </tr>
+            `;
         });
         $('#lazio-table').append(numeri);
     });
