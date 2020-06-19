@@ -340,11 +340,11 @@ thead tr {
   background: #88869B;
 }
 
-tbody tr:nth-child(even) {
+.table-row:nth-child(even) {
   background: #88869B;
 }
 
-tbody tr:nth-child(odd) {
+.table-row:nth-child(odd) {
   background: #464553;
 }
 

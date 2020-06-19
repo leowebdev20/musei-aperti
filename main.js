@@ -48,7 +48,7 @@ $(document).ready(function () {
                     };             // parte del getting the data from the json for the table, se l'utente conferma la ricerca con l'esatto nome della regione, per ora solo per il Veneto
                     if (searchField.toLowerCase() === "veneto") {
                         numeri += `
-                        <tr>
+                        <tr class="table-row">
                             <td>${value.museo}</td>;
                             <td>${value.citta}</td>;
                             <td>${apertura}</td>;
@@ -91,7 +91,7 @@ $(document).ready(function () {
         var numeri = '';
         $.each(data, function (key, value) {
             numeri += `
-            <tr>
+            <tr class="table-row">
                 <td>${value.dato}</td>;
                 <td>${value.numero}</td>;
             </tr>
@@ -107,7 +107,7 @@ $(document).ready(function () {
         var numeri = '';
         $.each(data, function (key, value) {
             numeri += `
-            <tr>
+            <tr class="table-row">
                 <td>${value.regione}</td>;
                 <td>${value.numero}</td>;
             </tr>
@@ -123,7 +123,7 @@ $(document).ready(function () {
         var numeri = '';
         $.each(data, function (key, value) {
             numeri += `
-            <tr>
+            <tr class="table-row">
                 <td>${value.museo}</td>;
                 <td>${value.citta}</td>;
                 <td>${value.aperto}</td>;
@@ -141,7 +141,7 @@ $(document).ready(function () {
         var numeri = '';
         $.each(data, function (key, value) {
             numeri += `
-            <tr>
+            <tr class="table-row">
                 <td>${value.museo}</td>;
                 <td>${value.citta}</td>;
                 <td>${value.aperto}</td>;
@@ -171,7 +171,7 @@ $(document).ready(function () {
                 programmazione = value.programmata;
             };             // parte del getting the data from the json for the table
             numeri += `
-            <tr>
+            <tr class="table-row">
                 <td>${value.museo}</td>;
                 <td>${value.citta}</td>;
                 <td>${apertura}</td>;
@@ -201,7 +201,7 @@ $(document).ready(function () {
                 programmazione = value.programmata;
             }; // fin qui, mentre ora inizia il getting the data from the json for the table
             numeri += `
-            <tr>
+            <tr class="table-row">
                 <td>${value.museo}</td>;
                 <td>${value.citta}</td>;
                 <td>${apertura}</td>;

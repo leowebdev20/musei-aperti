@@ -242,10 +242,10 @@ thead {
         background: $alternative;
     }
 }
-tbody {
-    tr:nth-child(even) {background: $alternative}
-    tr:nth-child(odd) {background: $background}
-}
+
+    .table-row:nth-child(even) {background: $alternative}
+    .table-row:nth-child(odd) {background: $background}
+
 
 // Selected text styling
 ::-moz-selection { color: $text}
