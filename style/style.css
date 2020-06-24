@@ -12,7 +12,7 @@ html, body {
 }
 
 html {
-  zoom: 100%;
+  zoom: 70%;
 }
 
 body {
@@ -523,6 +523,17 @@ th.sort {
         grid-template-columns: 1fr;
     gap: 12px 12px;
   }
+  .container-search {
+    height: 100%;
+  }
+  .containers {
+    height: 100%;
+    overflow: auto;
+  }
+  .containerZ {
+    -ms-grid-rows: 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px;
+        grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px;
+  }
   .dati-container {
     -ms-grid-column: 1;
     grid-column: 1;
@@ -534,30 +545,33 @@ th.sort {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    grid-row: 3 / span 2;
+    -ms-grid-row-span: 5;
+    grid-row: 3 / span 5;
   }
   .recenti-container {
     -ms-grid-column: 1;
     grid-column: 1;
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 4;
-    grid-row: 5 / span 4;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 10;
+    grid-row: 8 / span 10;
   }
   .programmate-container {
     -ms-grid-column: 1;
     grid-column: 1;
-    -ms-grid-row: 9;
-    -ms-grid-row-span: 4;
-    grid-row: 9 / span 4;
+    -ms-grid-row: 18;
+    -ms-grid-row-span: 5;
+    grid-row: 18 / span 5;
   }
-  .container-search {
-    margin-bottom: 100px;
+  html {
+    padding-bottom: 3500px;
+  }
+  .tables td {
+    padding-left: 20px;
+    width: 100%;
   }
   .containers {
     border: solid 1px #E5E5E5;
     border-radius: 13px;
-    overflow-y: scroll;
     width: 100%;
   }
   .containers h2 {
@@ -619,7 +633,6 @@ th.sort {
     border: none;
     border-bottom: 1px solid #eee;
     position: relative;
-    padding-left: 50%;
   }
   .recenti-container td:before {
     /* Now like a table header */
@@ -658,7 +671,6 @@ th.sort {
     border: none;
     border-bottom: 1px solid #eee;
     position: relative;
-    padding-left: 50%;
   }
   .programmate-container td:before {
     /* Now like a table header */

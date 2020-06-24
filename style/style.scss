@@ -18,7 +18,7 @@ html, body{
     min-height: 100vh;
 }
 html {
-    zoom: 100%;
+    zoom: 70%;
 }
 //GENERAL STYLE
 body {
@@ -397,30 +397,44 @@ th.sort {
         grid-template-columns: 1fr;
         gap: 12px 12px;
     }
-    .dati-container {
-       grid-column: 1;
-       grid-row: 1 / span 2;
-    }
-    .regioni-container {
-       grid-column: 1;
-       grid-row: 3 / span 2;
-    }
-    .recenti-container {
-       grid-column: 1;
-       grid-row: 5 / span 4;
-    }
-    .programmate-container {
-       grid-column: 1;
-       grid-row: 9 / span 4;
-    }
     .container-search {
-        margin-bottom: 100px;
+        height: 100%;
+      }
+    .containers {
+         height: 100%;
+         overflow: auto;
+    }
+    .containerZ {
+        grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px ;
+    }
+    .dati-container {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+     }
+     .regioni-container {
+        grid-column: 1;
+        grid-row: 3 / span 5;
+     }
+     .recenti-container {
+        grid-column: 1;
+        grid-row: 8 / span 10;
+     }
+     .programmate-container {
+        grid-column: 1;
+        grid-row: 18 / span 5;
+     }
+     html {
+         padding-bottom: 3500px;
+     }
+     .tables td {
+         padding-left: 20px;
+         width: 100%;
      }
     .containers {
         border: solid 1px $outline;
         border-radius: 13px;
         
-        overflow-y: scroll;
+        // overflow-y: scroll;
         // overflow-x: hidden;
         width: 100%;
         h2 {
@@ -484,7 +498,7 @@ th.sort {
                 border: none;
                 border-bottom: 1px solid #eee; 
                 position: relative;
-                padding-left: 50%; 
+                // padding-left: 50%; 
             }
             
             td:before { 
@@ -497,9 +511,6 @@ th.sort {
                 padding-right: 10px; 
                 white-space: nowrap;
             }
-            
-          
-
         }
         #programmate-table {
             font-size: 1em;
@@ -529,7 +540,7 @@ th.sort {
                     border: none;
                     border-bottom: 1px solid #eee; 
                     position: relative;
-                    padding-left: 50%; 
+                    // padding-left: 50%; 
                 }
                 
                 td:before { 
@@ -542,14 +553,7 @@ th.sort {
                     padding-right: 10px; 
                     white-space: nowrap;
                 }
-                
-              
-    
             }
-
-
-
-
   }
   // soluzione momentanea bug width su piccoli schermi
   @media only screen and (max-width: 400px) {
